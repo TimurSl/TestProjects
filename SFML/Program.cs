@@ -23,6 +23,8 @@ namespace RotatingHelloWorldSfmlDotNetCoreCSharp
         {
             VideoMode mode = new VideoMode(450, 450);
             RenderWindow window = new RenderWindow(mode, "Circle");
+            window.SetFramerateLimit(60);
+
 
             window.Closed += (obj, e) =>
             { 
